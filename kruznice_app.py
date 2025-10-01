@@ -7,6 +7,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 from reportlab.lib.colors import HexColor
+from reportlab.lib.utils import ImageReader   # <-- 🔥 tento řádek přidej
 from PIL import Image
 
 # ----------------------------
