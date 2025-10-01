@@ -101,6 +101,6 @@ if radius > 0 and num_points >= 1:
     - **Počet bodů**: {num_points}  
     - **Barva bodů**: `{color}`  
     - **Spojení čarou**: {"Ano" if show_lines else "Ne"}  
-    - **Autor**: Jan Novák  
+    - **Autor**: Josef Haša  
     - **Datum**: {datetime.today().strftime('%d.%m.%Y')}  
     """)
