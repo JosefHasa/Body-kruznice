@@ -17,8 +17,8 @@ with st.expander("ℹ️ O aplikaci a autorovi"):
     **Body na kružnici**  
     Webová aplikace vytvořená jako školní projekt.
 
-    - **Autor**: Jan Novák  
-    - **E-mail**: jan.novak@email.cz  
+    - **Autor**: Josef Haša  
+    - **E-mail**: 277826@vutbr.cz  
     - **Použité technologie**: Python, Streamlit, Matplotlib  
     - **Datum**: {date}
 
