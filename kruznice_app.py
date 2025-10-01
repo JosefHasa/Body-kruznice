@@ -86,7 +86,6 @@ if radius > 0 and num_points >= 1:
     img_buf.seek(0)
     img = Image.open(img_buf)
 
-   try:
     # 2. Vytvoření PDF s parametry + grafem
     pdf_buf = BytesIO()
     c = canvas.Canvas(pdf_buf, pagesize=A4)
