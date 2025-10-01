@@ -124,6 +124,7 @@ if radius > 0 and num_points >= 1:
     c.showPage()
     c.save()
 
+try:
     st.download_button(
         label="📄 Stáhnout PDF s parametry a grafem",
         data=pdf_buf.getvalue(),
