@@ -115,7 +115,6 @@ if radius > 0 and num_points >= 1:
     new_width = img_width * scale
     new_height = img_height * scale
     img = img.resize((int(new_width), int(new_height)))
-
     temp_img = BytesIO()
     img.save(temp_img, format="PNG")
     temp_img.seek(0)
