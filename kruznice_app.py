@@ -120,7 +120,7 @@ if radius > 0 and num_points >= 1:
     img.save(temp_img, format="PNG")
     temp_img.seek(0)
 
-    c.drawImage(temp_img, x=2 * cm, y=height - 2 * cm - new_height, width=new_width, height=new_height)
+    c.drawImage(ImageReader(temp_img), x=2 * cm, y=height - 2 * cm - new_height, width=new_width, height=new_height)
     c.showPage()
     c.save()
 
