@@ -22,6 +22,7 @@ if radius > 0 and num_points >= 1:
     fig, ax = plt.subplots()
     ax.set_aspect('equal')
     ax.plot(x_points, y_points, 'o', color=color, label='Body na kružnici')
+    ax.plot(np.append(x_points, x_points[0]), np.append(y_points, y_points[0]), '-', color=color, alpha=0.5, label='Spojovací čára')
     ax.plot(x_center, y_center, 'x', color='black', label='Střed')
     ax.set_title("Body rovnoměrně rozmístěné na kružnici")
     ax.legend()
