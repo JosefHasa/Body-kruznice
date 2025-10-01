@@ -86,6 +86,7 @@ if radius > 0 and num_points >= 1:
     img_buf.seek(0)
     img = Image.open(img_buf)
 
+   try:
     # 2. Vytvoření PDF s parametry + grafem
     pdf_buf = BytesIO()
     c = canvas.Canvas(pdf_buf, pagesize=A4)
@@ -130,3 +131,5 @@ if radius > 0 and num_points >= 1:
         file_name=f"kruznice_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf",
         mime="application/pdf"
     )
+except Exception as e:
+    st.error(f"Chyba při generování PDF: {e}")
